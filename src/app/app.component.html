@@ -1,0 +1,69 @@
+<router-outlet></router-outlet>
+
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="background-color:black">
+  <div class="container-fluid" style="background-color: wheat;">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse demo" id="navbarNav">
+      <ul class="navbar-nav">
+        <li><img src="https://img.freepik.com/premium-vector/restaurant-logo-design-template_79169-56.jpg?w=2000" alt="" style="width: 60px;"></li>
+        <!-- <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li> -->
+        <li class="nav-item">
+          <!-- ****************** use for POST API ***************** -->
+          <a class="nav-link btn btn-primary" href="#" data-toggle="modal" data-target="#modalRegisterFormS">add receipe</a>
+        </li>
+
+
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- ************************ using row and card -->
+<app-product style="margin-bottom: 0;"></app-product>
+
+
+
+<!-- ******************************* USE FOR ADD RECEIPE BUTTON'S ****************-->
+
+<div class="modal fade" id="modalRegisterFormS" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content"  id="spectrum">
+      
+      <div class="modal-body mx-3">
+
+        <!-- ****************** use for POST API ***************** -->
+        <form #userForm="ngForm" (ngSubmit)="getUserData(userForm.value)">
+        
+          <div class="form-group" >
+            <label for="exampleFormControlFile1">Select Image</label>
+            <input type="file" ngModel name="photo" class="form-control-file" id="exampleFormControlFile1">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Receipe Title</label>
+            <input type="text" ngModel class="form-control" name="Rtitle" id="exampleFormControlInput1">
+          </div>
+
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Receipe Detail</label>
+            <textarea class="form-control" ngModel name="Rdetail" id="exampleFormControlTextarea1" rows="3" reqired></textarea>
+          </div>
+
+
+
+          <div class="modal-footer d-flex justify-content-center">
+            <button class="btn btn-deep-orange" >Update</button>
+            <button type="button" class="btn btn-deep-orange" data-dismiss="modal">Close</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

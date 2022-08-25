@@ -1,0 +1,101 @@
+<section class="wrapper">
+  <div class="container-fostrap">
+    <div>
+      <h1 class="heading">
+        <span style="color: white;">Choose your favourite food</span>
+      </h1>
+    </div>
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4" *ngFor="let item of uses">
+            <div class="card" id="spectrum">
+              <a class="img-card" href="#" data-toggle="modal" data-target="#myModal">
+                <img src="../../assets//img/{{item.photo}}"
+                  (click)="findData(item.id,item.photo,item.Rtitle,item.Rdetail)" />
+                <!-- <img src="../../assets//img/dahi.jfif" (click)="findData(item.Rdetail)"/> -->
+              </a>
+              <div class="card-content">
+                <h4 class="card-title">
+
+                  <a href="#" style="color: white;"> {{item.Rtitle}}
+                  </a>
+                </h4>
+                <p>
+                  {{item.Rdetail | slice:0:40}}
+                </p>
+              </div>
+              <div class="card-read-more">
+
+                <button class="btn btn-primary" data-toggle="modal" data-target="#modalRegisterForm"
+                  (click)="findData(item.id,item.photo,item.Rtitle,item.Rdetail)">Edit &
+                  update</button>&nbsp;
+                <button class="btn btn-danger" (click)="deleteContact(item.id)">Delete</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--************************ USE TO CHECK DETAIL ABOUT RECEIPE ********************8 -->
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Recipe of {{tz}} </h4>
+      </div>
+      <ul class="modal-body" *ngFor="let data of y.split('\n')">
+        <li *ngIf="check(data) else elseBlock">{{data}}</li>
+        <ng-template #elseBlock>
+        </ng-template>
+      </ul>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- *************** END OF MODEL********************* -->
+
+
+<!--************************ FOR EDIT AND UPDATE BUTTON'S ********************8 -->
+<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      
+      <div class="modal-body mx-3" id="spectrum">
+        <form #userForm="ngForm">
+          <input type="text" #box1 value="{{id}}" disabled>
+          <input type="text" #box4 value="{{photo}}" disabled>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Receipe Title</label>
+            <input type="text" #box2 class="form-control" id="exampleFormControlInput1" value="{{tz}}">
+          </div>
+
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Receipe Detail</label>
+            <textarea class="form-control" #box3 id="exampleFormControlTextarea1" rows="3" value="{{y}}"></textarea>
+          </div>
+
+          <div class="modal-footer d-flex justify-content-center">
+            <button class="btn btn-deep-orange"
+              (click)="updateContact(box1.value,box4.value,box2.value,box3.value)">Update</button>
+            <button type="button" class="btn btn-deep-orange" data-dismiss="modal">Close</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>

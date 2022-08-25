@@ -1,0 +1,22 @@
+{
+  "product": [
+    {
+      "id": 3,
+      "photo": "dahi.jfif",
+      "Rtitle": "Curd Recipe anything",
+      "Rdetail": "Curd Recipe Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    },
+    {
+      "id": 4,
+      "photo": "biryani.jfif",
+      "Rtitle": "muradabadi biryani",
+      "Rdetail": "Step 1\nTo prepare this recipe, wash and soak the rice for half an hour. Then, in a large bowl, add the chickens and pour a little vinegar over it and set aside for 10 minutes. Meanwhile, wash the onions, green chillies, tomatoes, coriander leaves, bay leaves, and ginger under running water and chop them up separately.\n\nStep 2\nAfter the 10 minutes, wash the chicken and spread a layer of the ginger paste over it. Set aside. Now, take a large cotton cloth and put the one sliced onion, 2 green chilies, ginger, garlic, 4 cloves, 2 green cardamoms, 1 black cardamom, 1/2 tsp of cumin seeds, dagad fool, cinnamon, 1 bay leaf, and 5 peppercorns, hing and mace on it.\n\nStep 3\nGather the edges to form a potli. Now, take a pressure cooker and add the water along with the garlic chicken in it. Sprinkle 2 tbsp of salt and add in the potli. Cover the lid and cook for 1-2 whistles. Turn off the flame and let the pressure out naturally.\n\nStep 4\nTake the potli out after squeezing it out. Then, transfer the broth and the chicken to a large bowl and set it aside. Now, heat oil in the same pressure cooker. When the oil is hot enough, add cumin seeds, bay leaf, cardamom and cloves and let them splutter.\n\nStep 5\nNext, add the chopped onions along with the ginger and garlic paste and saute them till the onions turn golden. Then, add the chopped tomatoes, green chillies, cumin powder, red chillie powder, coriander powder and salt. Saute them all and mix well.\n\nStep 6\nNow, add the prepared chicken pieces, with garam masala powder, mint leaves, coriander leaves and the lemon juice. Pour in the chicken broth and bring it to a boil. As the broth starts boiling, add the half of the soaked basmati rice and cook it for 1-2 whistles.\n\nStep 7\nLet the pressure release naturally, then, uncover the lid. Divide the mixture into two bowls and pour red and yellow food colouring into each. Mix well. Then, in a degchi, add the remaining rice with water, garam masala powder and salt. Cook it till it's soft and done.\n\nStep 8\nFinally, layer the rice using a deep-bottomed pan. Place layers of the prepared rice and top it with ghee and lemon juice. Set side with a closed lid for 10-15 minutes and then give it a good stir to mix it all well. You can use your hand to mix it all and then, sprinkle chopped coriander leaves.\n\nStep 9\nTransfer it to a serving pot and enjoy the delicious Biryani!"
+    },
+    {
+      "id": 5,
+      "photo": "chili.jfif",
+      "Rtitle": "chicken chilli",
+      "Rdetail": "Chicken Chilli Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    }
+  ]
+}
