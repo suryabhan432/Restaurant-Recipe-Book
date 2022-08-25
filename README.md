@@ -1,5 +1,7 @@
 # RecipeBook
 
+<code>#Note:- In this project we use json server so first we need to run json server using command "json-server --watch db.json" (json-server file attached - src/app/assets/jserver/db.json)</code>
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.5.
 
 ## Development server
